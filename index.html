@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Portfolio of Raj Rajguru, a Computer Science Undergraduate passionate about AI/ML, Full-Stack Development, and Robotics." />
+    <meta name="keywords" content="Raj Rajguru, Portfolio, Software Engineer, Web Developer, AI, ML, Robotics, SISTec, Bhopal" />
+    <meta name="author" content="Raj Rajguru" />
+    <title>Raj Rajguru | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- ===== CURSOR GLOW ===== -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- ===== AURORA BACKGROUND CANVAS ===== -->
+    <canvas id="aurora-canvas"></canvas>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="logo">Raj.dev</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="theme-toggle" id="themeToggle">🌓</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <span class="badge">🚀 Available for Internship</span>
+                    <h1>Raj <span>Rajguru</span></h1>
+                    <p class="subtitle">4th Year Computer Science with IoT Undergraduate</p>
+                    <div class="typing-text" id="typingText"></div>
+                    <p style="color:#888; margin-top:0.8rem; max-width:500px; font-size:0.9rem;">
+                        4th year Computer Science with IoT undergraduate with strong foundations in Software Development and AI. Passionate about building scalable software and solving real-world engineering problems.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="Raj_Rajguru_Resume.pdf" target="_blank" class="btn-primary">📄 Download Resume</a>
+                        <a href="#projects" class="btn-secondary">🚀 View Work</a>
+                    </div>
+                </div>
+                <div class="hero-avatar">
+                    <div class="avatar-glass">
+                        <div class="ring"></div>
+                        <img src="profile.jpg" alt="Raj Rajguru" style="width: 92%; height: 92%; border-radius: 50%; object-fit: cover; z-index: 1; transform: translateZ(0); -webkit-backface-visibility: hidden; backface-visibility: hidden;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section style="padding: 0 0 3rem 0;">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+                    <div class="stat-number" data-count="5">0</div>
+                    <div class="stat-label">Major Projects</div>
+                </div>
+                <div class="stat-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+                    <div class="stat-number" data-count="2">0</div>
+                    <div class="stat-label">Hackathons</div>
+                </div>
+                <div class="stat-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+                    <div class="stat-number" data-count="10">0</div>
+                    <div class="stat-label">Certifications</div>
+                </div>
+                <div class="stat-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+                    <div class="stat-number" data-count="30">0</div>
+                    <div class="stat-label">Club Members Led</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div style="display:grid; grid-template-columns:2fr 1fr; gap:2.5rem;">
+                <div>
+                    <p style="color:#bbb; font-size:1.05rem;">
+                        Aspiring Software Engineer with a strong foundation in Full-Stack Development, Scalable Systems, and AI/ML. Passionate about building user-centric applications that solve real-world problems at scale. Motivated 4th year Computer Science with IoT student with hands-on experience in building smart robots and responsive web applications. Seeking a Software Engineering role to contribute to high-impact solutions.
+                    </p>
+                    
+                    <h3 style="color:#667eea; margin:1.5rem 0 0.5rem; font-size:1rem;">🎓 Education</h3>
+                    <div style="display:grid; grid-template-columns:1fr; gap:0.5rem;">
+                        <div style="background:rgba(255,255,255,0.03); padding:0.6rem 1rem; border-radius:12px; border:1px solid rgba(255,255,255,0.04);">
+                            <span style="color:#667eea; font-weight:600;">Sagar Institute of Science Technology & Engineering (SISTec -E)</span>
+                            <p style="font-size:0.8rem; color:#888;">B.Tech Computer Science with IoT (4th Year) · 2023–2027 · CGPA: 7.6/10</p>
+                        </div>
+                        <div style="background:rgba(255,255,255,0.03); padding:0.6rem 1rem; border-radius:12px; border:1px solid rgba(255,255,255,0.04);">
+                            <span style="color:#667eea; font-weight:600;">Govt. Sanjay Gandhi Higher Secondary School</span>
+                            <p style="font-size:0.8rem; color:#888;">12th Grade · 2023 · 71.80%</p>
+                        </div>
+                        <div style="background:rgba(255,255,255,0.03); padding:0.6rem 1rem; border-radius:12px; border:1px solid rgba(255,255,255,0.04);">
+                            <span style="color:#667eea; font-weight:600;">Bright Convent High School, Pandhurna</span>
+                            <p style="font-size:0.8rem; color:#888;">10th Grade · 2021 · 80.00%</p>
+                        </div>
+                    </div>
+
+                    <!-- ===== Personal Details ===== -->
+                    <div style="margin-top:1.5rem;">
+                        <p style="font-weight:600; color:#667eea; font-size:0.9rem;">📌 Personal Details</p>
+                        <div class="personal-grid" style="margin-top:0.5rem;">
+                            <div class="personal-item">
+                                <span class="icon">🎂</span>
+                                <span class="info">17 Jun, 2005</span>
+                            </div>
+                            <div class="personal-item">
+                                <span class="icon">📍</span>
+                                <span class="info">Bhopal, MP</span>
+                            </div>
+                            <div class="personal-item">
+                                <span class="icon">🗣️</span>
+                                <span class="info">English, Hindi, Marathi</span>
+                            </div>
+                            <div class="personal-item">
+                                <span class="icon">📧</span>
+                                <span class="info" style="font-size:0.75rem;">rajgurur409@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" style="display:flex; justify-content:center; align-items:center;">
+                    <div style="width:100%; height:100%; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.05); border-radius:20px; padding:2rem; text-align:center;">
+                        <h3 style="color:#667eea; margin-bottom:1rem;">Leadership</h3>
+                        <p style="color:#bbb; font-weight:600; margin-bottom:0.5rem;">Drone & Robotics Club</p>
+                        <p style="color:#888; font-size:0.85rem; line-height:1.6;">
+                            <strong>IT and Social Media Co-Lead:</strong> Co-led a team of 30+ members. Organized technical workshops, project demonstrations, and managed the club's online presence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            
+            <div style="margin-bottom: 2rem;">
+                <h3 style="color:#bbb; margin-bottom:1rem; font-size:1.1rem;">Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">C++</div>
+                    <div class="skill-tag">Java</div>
+                    <div class="skill-tag">JavaScript</div>
+                    <div class="skill-tag">Dart</div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 2rem;">
+                <h3 style="color:#bbb; margin-bottom:1rem; font-size:1.1rem;">Frameworks & Libraries</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">ReactJS</div>
+                    <div class="skill-tag">Flutter</div>
+                    <div class="skill-tag">Flask</div>
+                    <div class="skill-tag">OpenCV</div>
+                    <div class="skill-tag">TensorFlow</div>
+                    <div class="skill-tag">YOLOv8</div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+                <h3 style="color:#bbb; margin-bottom:1rem; font-size:1.1rem;">Tools & Core Concepts</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">Git / GitHub</div>
+                    <div class="skill-tag">MySQL</div>
+                    <div class="skill-tag">DSA & OOP</div>
+                    <div class="skill-tag">OS & DBMS</div>
+                    <div class="skill-tag">Computer Networks</div>
+                    <div class="skill-tag">System Design</div>
+                    <div class="skill-tag">IoT / ESP32</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GITHUB STATS ===== -->
+    <section class="section" id="github-stats">
+        <div class="container">
+            <h2 class="section-title">GitHub Activity</h2>
+            <div style="display:flex; flex-wrap:wrap; gap:1.5rem; justify-content:center; margin-top:2rem;">
+                <!-- GitHub General Stats -->
+                <img src="https://github-readme-stats.vercel.app/api?username=Raj80965&show_icons=true&hide_rank=true&theme=transparent&hide_border=true&title_color=667eea&text_color=bbb&icon_color=667eea" alt="Raj's GitHub Stats" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.05); border-radius:15px; padding:1rem; width:100%; max-width:480px;" data-tilt data-tilt-max="5" data-tilt-speed="400" />
+                
+                <!-- GitHub Top Languages -->
+                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Raj80965&layout=compact&theme=transparent&hide_border=true&title_color=667eea&text_color=bbb" alt="Raj's Top Languages" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.05); border-radius:15px; padding:1rem; width:100%; max-width:480px;" data-tilt data-tilt-max="5" data-tilt-speed="400" />
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.1">
+                    <span class="tag">AI / Autonomous Driving</span>
+                    <h3>AutoVision AI</h3>
+                    <div class="tech-stack">Python • CARLA • YOLOv8 • OpenCV • Flask</div>
+                    <p>AI-powered autonomous driving system. Achieved 87% object detection accuracy at 30 FPS using YOLOv8. Built Flask telemetry dashboard, cutting debug time by ~40%.</p>
+                    <a href="https://raj80965.github.io/AutoVision-AI" target="_blank">View Live Demo &rarr;</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.1">
+                    <span class="tag">Mobile Dev</span>
+                    <h3>CodeBharat Transliteration App</h3>
+                    <div class="tech-stack">Flutter • Dart • REST APIs</div>
+                    <p>Cross-platform mobile application supporting text translation for 5+ languages, adopted by 100+ beta users. Integrated REST APIs, reducing app load time by 35% via caching.</p>
+                    <a href="https://raj80965.github.io/codebharat" target="_blank">View Live Demo &rarr;</a>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.1">
+                    <span class="tag">Robotics & IoT</span>
+                    <h3>Intelligent Hospital Assistant</h3>
+                    <div class="tech-stack">ESP32 • IoT • Robotics</div>
+                    <p>ESP32-based autonomous robot with dual-mode IoT control. Developed real-time web dashboard for monitoring, reducing staff response time by 25%. Integrated IR gesture control.</p>
+                    <a href="https://raj80965.github.io/Intelligent-Hospital-Assistance-Robot/" target="_blank">View Live Demo &rarr;</a>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.1">
+                    <span class="tag">Web Development</span>
+                    <h3>Drone & Robotics Club Platform</h3>
+                    <div class="tech-stack">ReactJS • HTML/CSS • JavaScript • MySQL</div>
+                    <p>Designed and developed official club website using ReactJS. Collaborated with 10+ members to improve digital presence, reducing manual communication effort by 60%.</p>
+                    <a href="https://github.com/Raj80965/drone" target="_blank">View Source &rarr;</a>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.1">
+                    <span class="tag">Embedded Systems</span>
+                    <h3>RC Bluetooth Controller Car</h3>
+                    <div class="tech-stack">ESP32 • C/C++ • Motor Driver (L298N)</div>
+                    <p>Developed a Bluetooth-controlled robot operated via mobile device, involving hardware interfacing, embedded programming, and circuit design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS ===== -->
+    <section class="section" id="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements & Certifications</h2>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem;">
+                <div>
+                    <h3 style="color:#667eea; margin-bottom:1rem; font-size:1.1rem;">Hackathons & Awards</h3>
+                    <ul class="achievement-list" style="grid-template-columns:1fr;">
+                        <li>National Level Hackathon Participant - Oriental TechHack 2.0</li>
+                        <li>Top 10 Team - Robo Rush Competition</li>
+                        <li>Participant - SISTec Innovation Hackathon 3.0</li>
+                        <li>Robo Rush Player (Extracurricular)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="color:#667eea; margin-bottom:1rem; font-size:1.1rem;">Certifications</h3>
+                    <ul class="achievement-list" style="grid-template-columns:1fr;">
+                        <li>Cisco AI Fundamentals</li>
+                        <li>Cisco Python Essentials 1 & 2</li>
+                        <li>Cisco Cybersecurity Fundamentals</li>
+                        <li>E-Commerce Website (ISO, MSME)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div>
+                    <p style="color:#bbb; margin-bottom:2rem; font-size:1.05rem;">
+                        I am currently seeking Software Engineering and Full-Stack Development opportunities. Whether you have an open role or just want to connect, my inbox is always open!
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="icon">📧</span>
+                            <a href="mailto:rajgurur409@gmail.com">rajgurur409@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">💼</span>
+                            <a href="https://linkedin.com/in/raj-rajguru-1957302b2" target="_blank">LinkedIn Profile</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">🐙</span>
+                            <a href="https://github.com/Raj80965" target="_blank">github.com/Raj80965</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form action="https://formsubmit.co/rajgurur409@gmail.com" method="POST" class="contact-form">
+                        <!-- Anti-spam honeypot -->
+                        <input type="text" name="_honey" style="display:none">
+                        <!-- Disable captcha for smooth UX -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <!-- Redirect back to portfolio after sending -->
+                        <input type="hidden" name="_next" value="https://raj80965.github.io/">
+                        
+                        <input type="text" name="name" placeholder="Your Name" required />
+                        <input type="email" name="email" placeholder="Your Email" required />
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <h2 class="logo" style="font-size:1.5rem; margin-bottom:0.5rem;">Raj Rajguru</h2>
+            <p>Designed & Built with ❤️ for the Web</p>
+            <div class="social-icons">
+                <a href="https://github.com/Raj80965" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/raj-rajguru-1957302b2" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
